@@ -1,0 +1,38 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Dotnet (C# / F#)
+  # logo: "/images/sections/skills/kubernetes.png"
+  summary: "Architecture and development of web services and REST APIs with dotnet core and .Net Framework.\n\n
+  Convinced about its benefits, I advocate and encourage usage of functional programing style.\n\n
+  Libraries: EF Core, Hangfire, Newtonsoft, Langage-ext."
+  # url: "https://kubernetes.io/"
+
+- name: React (Typescript / Javascript)
+  # logo: "/images/sections/skills/go.png"
+  summary: "Preferred technology for writing web application. Design and development of component, abstracting repetitive logic to boost code readability and maintenabilitz.\n\n
+  Enforcing best practices and guiding junior team members. I am a strong believer that typed code leads to higher quality and ease maintenance, hence I push for Typescript usage whenever possible.\n\n
+  Libraries: Hooks, Redux, Saga, Reselect, Material UI"
+  # url: "https://golang.org/"
+
+- name: SQL & NoSQL
+  summary: "Design of data model for complex business applications; query optimisation.\n\n
+  Developped data quality solution for data warehouse.\n\n
+  I am interested in Graph Databases such as Neo4j or ArangoDB and look forward to an opportunity to experiment with them.\n\n
+  SQL: SQL Server, PostgreSQL, MySQL, Teradata\n\n
+  NoSQL: MongoDB, Redis"
+
+- name: Tech Watch
+  # logo: "/images/sections/skills/cloud.png"
+  summary: "I am passionate about programming and tech in general.\n\n
+  Currently, I am looking/experimenting with Elixir (Phoenix), Rust, Go, Ansible and AWS."
