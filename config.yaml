@@ -1,7 +1,7 @@
 baseURL: https://fredsh.github.io
 
 languageCode: en-us
-title: "Fred's Blog"
+title: "fred.sh"
 theme: "toha"
 
 # Manage languages
@@ -27,7 +27,7 @@ enableEmoji: true
 # Site parameters
 params:
   # GitHub repo URL of your site
-  gitRepo: https://github.com/fredsh/fredsh-site
+  # gitRepo: https://github.com/fredsh/fredsh-site/main
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true

@@ -11,7 +11,12 @@ menu:
 {{< note title="Todo" >}}
 ```md
 [x] site
-[ ] deploy with gh actions
+[x] deploy with gh actions
 [ ] write first post
+[x] add cookie banner
+[ ] write cookie policy
+[ ] write privacy statement
+[ ] add google analytics
+[ ] add comments on posts
 ```
 
