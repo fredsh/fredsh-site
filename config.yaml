@@ -4,6 +4,16 @@ languageCode: en-us
 title: "fred.sh"
 theme: "toha"
 
+googleAnalytics: G-9Y2D259RCR
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: "false" # 'true' makes it so the users' IP addresses are anonymized within Google Analytics
+    disable: "false"
+    respectDoNotTrack: "true" # 'true' makes the GA templates respect the “Do Not Track” HTTP header
+    useSessionStorage: "false" # 'true' disables the use of Cookies and use Session Storage to Store the GA Client ID
+
+
 # Manage languages
 # For any more details, you can check the official documentation: https://gohugo.io/content-management/multilingual/
 languages:
