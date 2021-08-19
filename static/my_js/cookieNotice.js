@@ -4,10 +4,15 @@ const cookieButtonNo = document.querySelector(".cookie-btn-no");
 const cookieAnchor = document.querySelector(".cookie-anchor");
 
 cookieButtonOk.addEventListener("click", () => {
+  const wasApproved = window.isCookieApproved();
   cookieContainer.classList.remove("active");
   cookieAnchor.classList.remove("inactive");
   localStorage.setItem("cookieBannerApproved", "true");
   localStorage.removeItem("cookieBannerRejected")
+  window.enableCookies();
+  if (!wasApproved) {
+    window.location.reload();
+  }
 });
 
 cookieButtonNo.addEventListener("click", () => {
@@ -15,6 +20,7 @@ cookieButtonNo.addEventListener("click", () => {
   cookieAnchor.classList.remove("inactive");
   localStorage.setItem("cookieBannerRejected", "true");
   localStorage.removeItem("cookieBannerApproved")
+  window.disableCookies();
 });
 
 cookieAnchor.addEventListener("click", () => {

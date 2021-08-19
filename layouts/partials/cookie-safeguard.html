@@ -1,0 +1,56 @@
+<script>
+
+  function deleteCookies() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var eqPos = cookie.indexOf("=");
+      var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+
+      document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=";
+      /*below line is to delete the google analytics cookies. they are set with the domain*/
+      document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;domain=" + location.hostname.replace(/^www\./i, "");
+
+    }
+  }
+
+  function disableCookies() {
+    deleteCookies();
+    if (!document.__defineGetter__) {
+      Object.defineProperty(document, 'cookie', {
+        get: function () { return '' },
+        set: function () { return true },
+      });
+    } else {
+      document.__defineGetter__("cookie", function () { return ''; });
+      document.__defineSetter__("cookie", function () { return true });
+    }
+  }
+
+  function enableCookies() {
+    if (!document.__defineGetter__) {
+      Object.defineProperty(document, 'cookie', {
+        get: function () { return document.cookie; },
+        set: function (newValue) { document.cookie = newValue; },
+      });
+    } else {
+      document.__defineGetter__("cookie", function () { return document.cookie; });
+      document.__defineSetter__("cookie", function (newValue) { document.cookie = newValue; });
+    }
+  }
+
+  function isCookieApproved() {
+    return localStorage.getItem("cookieBannerApproved") === 'true';
+  }
+
+  if (!isCookieApproved()) {
+    console.log('auto disable')
+    deleteCookies();
+    disableCookies();
+  }
+
+  window.isCookieApproved = isCookieApproved;
+  window.disableCookies = disableCookies;
+  window.enableCookies = enableCookies;
+  window.deleteCookies = deleteCookies;
+</script>

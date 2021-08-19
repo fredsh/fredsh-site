@@ -11,7 +11,7 @@ privacy:
     anonymizeIP: "false" # 'true' makes it so the users' IP addresses are anonymized within Google Analytics
     disable: "false"
     respectDoNotTrack: "true" # 'true' makes the GA templates respect the “Do Not Track” HTTP header
-    useSessionStorage: "false" # 'true' disables the use of Cookies and use Session Storage to Store the GA Client ID
+    useSessionStorage: "true" # 'true' disables the use of Cookies and use Session Storage to Store the GA Client ID
 
 
 # Manage languages

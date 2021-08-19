@@ -3,7 +3,7 @@ title: Todo
 weight: 20
 menu:
   notes:
-    name: todo
+    name: Todo
     identifier: notes-todo
     weight: 20
 ---
@@ -15,8 +15,8 @@ menu:
 [ ] write first post
 [x] add cookie banner
 [ ] write cookie policy
-[ ] write privacy statement
-[ ] add google analytics
+[x] write privacy statement
+[x] add google analytics
 [ ] add comments on posts
 ```
 
