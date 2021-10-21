@@ -34,3 +34,5 @@ Full details can be found on my [Cookie Policy](/cookie-policy). When you visit 
 This site uses [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) for traffic analysis and [GraphComment](https://graphcomment.com/en/) for handling comments in blog posts.
 
 These tools may set cookies for your navigation experience.
+
+{{< graphcomment commentThreadUid="078bf86b-8c2a-52b5-9e49-251e45f0eeb4" >}}

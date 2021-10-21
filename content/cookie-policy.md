@@ -13,3 +13,5 @@ To view or delete cookies, please refer to your web browser instructions.
 This site uses [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision) for traffic analysis and [GraphComment](https://graphcomment.com/en/) for handling comments in blog posts. These services use cookies to identify users.
 
 You may opt-out of cookies on this website through the cookie banner. Please note that by doing so, comments feature may be disabled completely or not working as expected.
+
+{{< graphcomment commentThreadUid="7377b18a-1afa-5f68-b53f-4cdb51a866cd" >}}

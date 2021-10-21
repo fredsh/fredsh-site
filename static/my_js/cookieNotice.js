@@ -16,11 +16,15 @@ cookieButtonOk.addEventListener("click", () => {
 });
 
 cookieButtonNo.addEventListener("click", () => {
+  const wasApproved = window.isCookieApproved();
   cookieContainer.classList.remove("active");
   cookieAnchor.classList.remove("inactive");
   localStorage.setItem("cookieBannerRejected", "true");
   localStorage.removeItem("cookieBannerApproved")
   window.disableCookies();
+  if (wasApproved) {
+    window.location.reload();
+  }
 });
 
 cookieAnchor.addEventListener("click", () => {
