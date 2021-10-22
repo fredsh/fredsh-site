@@ -35,4 +35,4 @@ This site uses [Google Analytics](https://analytics.google.com/analytics/web/pro
 
 These tools may set cookies for your navigation experience.
 
-{{< graphcomment commentThreadUid="078bf86b-8c2a-52b5-9e49-251e45f0eeb4" >}}
+{{< graphcomment commentThreadUid="privacy_078bf86b-8c2a-52b5-9e49-251e45f0eeb4" >}}
