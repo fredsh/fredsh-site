@@ -9,7 +9,7 @@ cookieButtonOk.addEventListener("click", () => {
   cookieAnchor.classList.remove("inactive");
   localStorage.setItem("cookieBannerApproved", "true");
   localStorage.removeItem("cookieBannerRejected")
-  window.enableCookies();
+  // window.enableCookies();
   if (!wasApproved) {
     window.location.reload();
   }

@@ -41,7 +41,8 @@
   right: 80px;
   width: 60px;
   height: 16px;
-  background-color: #107a65;
+  /* background-color: #107a65; */
+  background-color: #248aaa;
   border-radius: 3px 3px 0 0;
   font-size: 11px;
 }
@@ -87,3 +88,4 @@
     cursor: pointer;
     display: inline-block;
   }
+

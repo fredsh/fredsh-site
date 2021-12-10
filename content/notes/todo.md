@@ -12,11 +12,11 @@ menu:
 ```md
 [x] site
 [x] deploy with gh actions
-[ ] write first post
+[x] write first post
 [x] add cookie banner
 [ ] write cookie policy
 [x] write privacy statement
 [x] add google analytics
-[ ] add comments on posts
+[x] add comments on posts
 ```
 

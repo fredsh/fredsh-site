@@ -27,30 +27,30 @@
     }
   }
 
-  function enableCookies() {
-    if (!document.__defineGetter__) {
-      Object.defineProperty(document, 'cookie', {
-        get: function () { return document.cookie; },
-        set: function (newValue) { document.cookie = newValue; },
-      });
-    } else {
-      document.__defineGetter__("cookie", function () { return document.cookie; });
-      document.__defineSetter__("cookie", function (newValue) { document.cookie = newValue; });
-    }
-  }
+  // function enableCookies() {
+  //   if (!document.__defineGetter__) {
+  //     Object.defineProperty(document, 'cookie', {
+  //       get: function () { return document.cookie; },
+  //       set: function (newValue) { document.cookie = newValue; },
+  //     });
+  //   } else {
+  //     document.__defineGetter__("cookie", function () { return document.cookie; });
+  //     document.__defineSetter__("cookie", function (newValue) { document.cookie = newValue; });
+  //   }
+  // }
 
   function isCookieApproved() {
     return localStorage.getItem("cookieBannerApproved") === 'true';
   }
 
   if (!isCookieApproved()) {
-    console.log('auto disable')
+    // console.log('auto disable')
     deleteCookies();
     disableCookies();
   }
 
   window.isCookieApproved = isCookieApproved;
   window.disableCookies = disableCookies;
-  window.enableCookies = enableCookies;
+  // window.enableCookies = enableCookies;
   window.deleteCookies = deleteCookies;
 </script>
