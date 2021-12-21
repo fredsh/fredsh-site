@@ -7,7 +7,7 @@ menu:
   sidebar:
     name: How to cookie consent?
     identifier: safely-manage-cookie-consent
-    # weight: 10
+    weight: 20
 ---
 
 {{< photoCredit
