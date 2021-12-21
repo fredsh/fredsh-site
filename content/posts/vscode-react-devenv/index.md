@@ -1,7 +1,7 @@
 ---
 title: "React DevEnv with VSCode in 5 minutes"
 date: 2021-12-21T20:27:39+01:00
-draft: true
+draft: false
 hero: hero.jpg
 menu:
   sidebar:
