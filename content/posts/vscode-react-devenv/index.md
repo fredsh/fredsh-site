@@ -141,3 +141,5 @@ Now, after launching the app with `npm start` from the terminal inside the `devc
 For large projects or with many contributors, I would recommend preparing a fine tuned base image that suits the team needs but it is perfectly fine to use one of the base image available to get started. Also, I have not covered here the possibilities offered with `docker-compose`, which can be used to have a database container running alongside the devcontainer.
 
 Thank you for reading, I hope that the devcontainers will be useful to you. Please leave a comment to share your opinion or if you have a question.
+
+{{< graphcomment commentThreadUid="devcontainer_91b62457-ad59-5a28-8e92-2035d3f6b2cb" >}}
